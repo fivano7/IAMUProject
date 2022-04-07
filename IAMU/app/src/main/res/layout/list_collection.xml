@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/height_list_col"
+    app:cardBackgroundColor="?colorOnSecondary"
+    app:cardCornerRadius="@dimen/corner_radius_list_col"
+    app:cardElevation="@dimen/card_elevation_list_col"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/iv_height_list_col"
+            android:adjustViewBounds="false"
+            android:scaleType="center"
+            tools:src="@drawable/header" />
+
+        <TextView
+            android:id="@+id/tvCollectionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tv_margin_top_list_col"
+            android:fontFamily="@string/tv_font_list_col"
+            android:text="@string/sample_collection_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_text_size_list_col" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/iv_size_list_col"
+            android:layout_height="@dimen/iv_size_list_col"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/iv_margin_top_list_col"
+            android:background="@drawable/border"
+            tools:src="@drawable/gfc_logo" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/iv_trash_size_list_col"
+            android:layout_height="@dimen/iv_trash_size_list_col"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/iv_padding_list_col"
+            android:src="@drawable/trash" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

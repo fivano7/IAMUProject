@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/iv_size_nav_header"
+    android:layout_height="@dimen/iv_size_nav_header"
+    android:layout_marginTop="@dimen/iv_margin_top_nav"
+    android:layout_marginLeft="@dimen/iv_margin_left_nav"
+    android:src="@drawable/logo" />

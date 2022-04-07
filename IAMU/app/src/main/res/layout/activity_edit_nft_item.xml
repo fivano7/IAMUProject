@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimaryVariant"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_act_edit_nft"
+    android:paddingRight="@dimen/padding_act_edit_nft"
+    tools:context=".EditNftItemActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manage"
+        android:textAllCaps="true"
+        android:textColor="?colorOnPrimary"
+        android:layout_margin="@dimen/tv_margin_top_act_edit_nft"
+        android:textAlignment="center"
+        android:textSize="@dimen/tv_size_act_edit_nft" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="@dimen/iv_size_act_edit_nft"
+        android:layout_height="@dimen/iv_size_act_edit_nft"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+        android:background="@drawable/border"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/default_coll_img" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/tv_margin_top_big_act_edit_nft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/name"
+        android:textColor="?colorOnPrimary"
+        android:fontFamily="@string/font_tv_act_edit_nft"
+        android:textSize="@dimen/tv_size_small_act_edit_nft"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyTextInputLayout_overlay"
+        app:boxStrokeWidth="@dimen/box_stroke_width_act_edit_nft"
+        app:hintEnabled="false"
+        app:boxBackgroundColor="?colorOnSecondary"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNftItemName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/et_size_act_edit_nft"
+            android:padding="@dimen/et_padding_act_edit_nft"
+            android:textColorHint="?colorOnPrimary"
+            android:textColor="?colorOnPrimary"
+            android:hint="@string/nft_name"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/tv_margin_top_big_act_edit_nft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/link"
+        android:textColor="?colorOnPrimary"
+        android:fontFamily="@string/font_tv_act_edit_nft"
+        android:textSize="@dimen/tv_size_small_act_edit_nft"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyTextInputLayout_overlay"
+        app:boxStrokeWidth="@dimen/box_stroke_width_act_edit_nft"
+        app:hintEnabled="false"
+        app:boxBackgroundColor="?colorOnSecondary"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etOpenSeaLink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/et_size_act_edit_nft"
+            android:padding="@dimen/et_padding_act_edit_nft"
+            android:textColorHint="?colorOnPrimary"
+            android:textColor="?colorOnPrimary"
+            android:hint="@string/sample_collection_url"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCommit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/btn_margin_top_act_edit_nft"
+        android:fontFamily="@string/btn_font_act_edit_nft"
+        android:paddingTop="0dp"
+        android:text="@string/commit"
+        android:textAllCaps="false"
+        android:textSize="@dimen/btn_text_size_act_edit_nft"
+        app:backgroundTint="?colorOnSecondary"
+        app:cornerRadius="@dimen/btn_corner_radius_act_edit_nft"
+        app:strokeColor="?colorOnPrimary"
+        app:strokeWidth="@dimen/btn_stroke_width_act_edit_nft"
+        android:layout_marginBottom="@dimen/btn_margin_bottom_act_edit_nft"
+        tools:visibility="visible" />
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dark_theme_key" translatable="false">DarkThemeKey</string>
+    <string name="language_key" translatable="false">LanguageKey</string>
+</resources>
+

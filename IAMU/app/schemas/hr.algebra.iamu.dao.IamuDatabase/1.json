@@ -1,0 +1,120 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "f1f37b13ea5835c297de504a93e6f070",
+    "entities": [
+      {
+        "tableName": "nftcollection",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_idNftCollection` INTEGER PRIMARY KEY AUTOINCREMENT, `collectionName` TEXT, `collectionImageUrl` TEXT, `collectionBannerUrl` TEXT, `collectionOpenseaUrl` TEXT, `collectionDescription` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_idNftCollection",
+            "columnName": "_idNftCollection",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionName",
+            "columnName": "collectionName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionImageUrl",
+            "columnName": "collectionImageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionBannerUrl",
+            "columnName": "collectionBannerUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionOpenseaUrl",
+            "columnName": "collectionOpenseaUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDescription",
+            "columnName": "collectionDescription",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_idNftCollection"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "nftitem",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_idNftItem` INTEGER PRIMARY KEY AUTOINCREMENT, `_nftCollectionParentId` INTEGER, `nFTName` TEXT, `nFTImageUrl` TEXT, `nFTOpenseaUrl` TEXT, FOREIGN KEY(`_nftCollectionParentId`) REFERENCES `nftcollection`(`_idNftCollection`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "_idNftItem",
+            "columnName": "_idNftItem",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "_nftCollectionParentId",
+            "columnName": "_nftCollectionParentId",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nFTName",
+            "columnName": "nFTName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nFTImageUrl",
+            "columnName": "nFTImageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nFTOpenseaUrl",
+            "columnName": "nFTOpenseaUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_idNftItem"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "nftcollection",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "_nftCollectionParentId"
+            ],
+            "referencedColumns": [
+              "_idNftCollection"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f1f37b13ea5835c297de504a93e6f070')"
+    ]
+  }
+}

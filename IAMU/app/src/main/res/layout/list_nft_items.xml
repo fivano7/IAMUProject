@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="?colorOnSecondary"
+    app:cardCornerRadius="@dimen/card_corner_list_nfts"
+    app:cardElevation="@dimen/card_elevation_list_nfts"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding_list_nfts">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/iv_size_list_nfts"
+            android:layout_height="@dimen/iv_size_list_nfts"
+            android:layout_marginLeft="@dimen/iv_margin_left_list_nfts"
+            android:background="@drawable/border"
+            tools:src="@drawable/gfc_logo" />
+
+        <TextView
+            android:id="@+id/tvNftItemName"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/tv_height_list_nfts"
+            android:layout_weight="4"
+            android:paddingStart="@dimen/tv_padding_start_list_nfts"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textSize="@dimen/tv_size_list_nfts"
+            android:fontFamily="@string/tv_font_list_nfts"
+            tools:text="@string/sample_nft_item" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/iv_trash_size_list_nfts"
+            android:layout_height="@dimen/iv_trash_size_list_nfts"
+            android:layout_marginRight="@dimen/iv_trash_margin_right_list_nfts"
+            android:src="@drawable/trash" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

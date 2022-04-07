@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragments"
+    app:startDestination="@id/menuCollections">
+
+    <fragment
+        android:id="@+id/menuCollections"
+        android:name="hr.algebra.iamu.CollectionsFragment"
+        android:label="@string/collections"
+        tools:layout="@layout/fragment_collections">
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuPreferences"
+        android:name="hr.algebra.iamu.PreferencesFragment"
+        android:label="@string/preferences"
+        tools:layout="@layout/fragment_preferences">
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuAbout"
+        android:name="hr.algebra.iamu.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/menuMaps"
+        android:name="hr.algebra.iamu.MapsFragment"
+        android:label="@string/crypto_atms"
+        tools:layout="@layout/fragment_maps">
+    </fragment>
+
+
+
+</navigation>

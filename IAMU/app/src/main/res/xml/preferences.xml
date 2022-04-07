@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="@string/dark_theme_key"
+        android:summary="@string/dark_theme"
+        android:title="@string/theme"
+        />
+
+    <PreferenceCategory />
+
+  <!--  <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/language_texts"
+        android:entryValues="@array/language_values"
+        android:key="@string/language_key"
+        android:summary="@string/application_language"
+        android:title="@string/language" />-->
+
+</PreferenceScreen>
+
+    <!--
+    PREFERENCES:
+    1.) KEYS    (LanguageKey)
+    2.) ARRAYS ("Hrvatski" - 1)
+    3.) PREFERENCES (Spojit ih po tipu da se vizualno vide, ovdje)
+    4.) PreferencesFragment : PreferenceFragmentCompat()
+    5.) U njemu  onCreatePreferences koji addPreferencesFromResource(R.xml.preferences)
+    -->

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_act_start"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/iv_size_act_start"
+        android:layout_height="@dimen/iv_size_act_start"
+        android:layout_marginTop="@dimen/iv_margin_top_act_start"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top_act_start"
+        android:text="@string/iamu"
+        android:textSize="@dimen/tv_size_act_start"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/tv_margin_top_act_start"
+        android:layout_weight="1"
+        android:textSize="@dimen/tv_size_small_act_start"
+        android:gravity="top|center"
+        android:text="@string/fetching_data" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRetry"
+        android:layout_width="@dimen/btn_width_act_start"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_margin_top_act_start"
+        android:layout_marginBottom="@dimen/btn_margin_bottom_act_start"
+        android:paddingTop="0dp"
+        android:text="@string/retry"
+        android:textSize="@dimen/btn_text_size_act_start"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        app:backgroundTint="?colorOnSecondary"
+        app:cornerRadius="@dimen/btn_corner_radius_act_start"
+        app:strokeColor="?colorOnPrimary"
+        app:strokeWidth="@dimen/btn_stroke_width_act_start"
+        tools:visibility="visible" />
+
+</LinearLayout>

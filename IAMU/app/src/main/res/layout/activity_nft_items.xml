@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_top_act_nft_items"
+    android:background="?colorSecondary"
+    tools:context=".NftItemsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/tv_size_act_nft_items"
+        android:text="@string/nfts"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNftItems"
+        android:layout_marginTop="@dimen/rv_margin_top_act_nft_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_act_nft_items"
+        android:layout_marginBottom="@dimen/fab_margin_act_nft_items"
+        android:backgroundTint="?colorOnPrimary"
+        android:src="@android:drawable/ic_input_add"
+        />
+
+</FrameLayout>

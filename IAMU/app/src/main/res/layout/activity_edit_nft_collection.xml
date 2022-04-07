@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimaryVariant"
+    android:paddingLeft="@dimen/padding_act_edit_col"
+    android:paddingRight="@dimen/padding_act_edit_col"
+    tools:context=".EditNftCollectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tv_margin_top_act_edit_col"
+            android:text="@string/manage"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="?colorOnPrimary"
+            android:textSize="@dimen/tv_size_act_edit_col" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_act_edit_col">
+
+            <ImageView
+                android:id="@+id/ivBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/iv_height_act_edit_col"
+                android:adjustViewBounds="false"
+                android:scaleType="center"
+                tools:src="@drawable/default_header" />
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="@dimen/iv_size_act_edit_col"
+                android:layout_height="@dimen/iv_size_act_edit_col"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/iv_margin_top_act_edit_col"
+                android:adjustViewBounds="false"
+                android:background="@drawable/border"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/default_coll_img" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_margin_top_big_act_edit_col"
+            android:fontFamily="@string/tv_font_act_edit_col"
+            android:text="@string/name"
+            android:textAllCaps="true"
+            android:textColor="?colorOnPrimary"
+            android:textSize="@dimen/tv_size_small_act_edit_col" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyTextInputLayout_overlay"
+            app:boxBackgroundColor="?colorOnSecondary"
+            app:boxStrokeWidth="@dimen/et_box_stroke_width_act_edit_col"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNftCollectionName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/collection_name"
+                android:padding="@dimen/et_padding_act_edit_col"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="?colorOnPrimary"
+                android:textSize="@dimen/et_text_size_act_edit_col" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_margin_top_big_act_edit_col"
+            android:fontFamily="@string/tv_font_act_edit_col"
+            android:text="@string/link"
+            android:textAllCaps="true"
+            android:textColor="?colorOnPrimary"
+            android:textSize="@dimen/tv_size_small_act_edit_col" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyTextInputLayout_overlay"
+            app:boxBackgroundColor="?colorOnSecondary"
+            app:boxStrokeWidth="@dimen/et_box_stroke_width_act_edit_col"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etOpenSeaLink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/sample_collection_url"
+                android:padding="@dimen/et_padding_act_edit_col"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="?colorOnPrimary"
+                android:textSize="@dimen/et_text_size_act_edit_col" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_margin_top_big_act_edit_col"
+            android:fontFamily="@string/tv_font_act_edit_col"
+            android:text="@string/description"
+            android:textAllCaps="true"
+            android:textColor="?colorOnPrimary"
+            android:textSize="@dimen/tv_size_small_act_edit_col" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyTextInputLayout_overlay"
+            app:boxBackgroundColor="?colorOnSecondary"
+            app:boxStrokeWidth="@dimen/et_box_stroke_width_act_edit_col"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/information_about_collection"
+                android:padding="@dimen/et_padding_act_edit_col"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="?colorOnPrimary"
+                android:textSize="@dimen/et_text_size_act_edit_col" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCommit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/btn_margin_top_act_edit_col"
+            android:layout_marginBottom="@dimen/btn_margin_bottom_act_edit_col"
+            android:fontFamily="@string/btn_font_act_edit_col"
+            android:paddingTop="0dp"
+            android:text="@string/commit"
+            android:textAllCaps="false"
+            android:textSize="@dimen/btn_text_size_act_edit_col"
+            app:backgroundTint="?colorOnSecondary"
+            app:cornerRadius="@dimen/btn_corner_radius_act_edit_col"
+            app:strokeColor="?colorOnPrimary"
+            app:strokeWidth="@dimen/btn_stroke_width_act_edit_col"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>
